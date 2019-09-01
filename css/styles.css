@@ -3,18 +3,49 @@
 @import url(
     'https://fonts.googleapis.com/css?family=Patua+One');
 
-@media (min-width: 588px) {
-    .container-fluid {
-        background-color: pink;
-    }
 
-
-
-    body{
+   html, body{
         font-family: 'Patua One', cursive;
         color:white;
+        height: 100%;
+        width: 100%;
     }
 
-    .container-fluid{
-        background-color: grey;
+    .navbar {
+        background-color: #23415C;
+        padding: 1% 0;
+        font-size: 1.2em;
     }
+    
+    /* .navbar-brand>img {
+        height: 100%;
+        padding: 15px;
+        width: auto;
+      } */
+
+
+    /* .logo-image{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+    } */
+
+    .navbar-default .navbar-nav li a {
+        color:#d5d5d5;
+    }
+
+    .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active, {
+        color: #FFFFFF;
+    }
+    
+.jumbotron, h1 {
+background-image: url('../images/attorney.jpg') no-repeat center center fixed;
+display: table;
+height: 100%;
+position: relative;
+width: 100%;
+background-size: cover;
+}
+
