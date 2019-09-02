@@ -20,13 +20,17 @@
         width: 100%;
     }
 
-    h1 {
-        color:black;
+    h1, h2 {
+        color:#1f1a1a;
+        margin-top: 40px;
+        text-align: center;
     }
     .navbar {
         background-color: #23303c;
         padding: 1% 0;
         font-size: 1.2em;
+        margin-bottom: -1px;
+
     }
     
      .navbar-brand>img {
@@ -53,14 +57,19 @@
     }
 
     .jumbotron {
-        background-image: url('https://unsplash.com/photos/xcVW_sFp4jQ');
+        background-image: url("../images/photo-hands.jpg");
+        background-size: 200px;
+        color:#211421;
+        height: 500px;
         position: relative;
         align-items: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
     } 
      
      .modal-header {
-        color:pink;
+        color:#23303c;
     }
      *
 
