@@ -6,77 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css>">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-----NAVBAR-->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">UX Today</a>
-                    
-                        
-                        
-                </div>
-                
-                    <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                        
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                            
-                            <li><a class="active">About</a></li>
-                            <li><a href="#Projects">Projects</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </ul>
-                    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">UX Today</a>
             </div>
-            
-        </nav>
-
-        <!--JUMBOTRON HERO IMG-->
-        
-                
-                        <div class="jumbotron">
-                            <div class="container">
-                                <div class="row text-center">
-                                        <div class="col-lg-4">
-                                                <h1>CLIENT FOCUSED DESIGN.</h1>
-                                                <h3>When the stakes are high, we can help you.</h3>
-                                                <a href="#" class="btn btn-default btn-lg">Contact Us</a>
-                                        </div>
-                                        
-                                </div>
-                                    
-
-                            </div>
-                        </div>       
-    
-        <!--END OF JUMBOTRON HERO IMG-->
-             
-
-        <!-- <div id="home">
-            <div class="landing-text">
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span></li></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--JUMBOTRON HERO IMG-->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row text-center">
+                <!-- <img src="images/werk.jpg" height=400px;> -->
                 <h1>CLIENT FOCUSED DESIGN.</h1>
-                <h3>When the stakes are high, we can help you.</h3>
-                <a href="#" class="btn btn-default btn-lg">Contact Us</a>
-            </div>
-        </div> -->
-<!--END HERO-->
-        <div class="padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="images/photo-hands.jpg">
+                <h3>When the stakes are high, we can help you.</h3><br>
+                <!-- Trigger the modal with a button -->
+                <a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</a>
+                <!--TRIGGER MODAL------->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Ready to redesign with confidence?</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!---BEGIN CLIENT CONTACT FORM-->
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="name" class="form-control" id="inputName3" placeholder="Name">
+                                            </div>
+                                    </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                     <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPhone3" class="col-sm-2 col-form-label">Phone #:</label>
+                                            <div class="col-sm-10">
+                                                <input type="phone" class="form-control" id="inputPhone3" placeholder="Phone">
+                                            </div>
+                                        </div>
+                                    <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label col-sm-2 pt-0">Contact Us</legend>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            I have a project idea!
+                                                         </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                        <label class="form-check-label" for="gridRadios2">I'm interested in pricing.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group row">
+                                            <div class="col-sm-2">Would you like to receive monthly news?</div>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">Yes!</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">Not today.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn btn-primary">Confirm.</button>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END OF JUMBOTRON HERO IMG-->
+<!--END MODAL/CLIENT CONTACT FORM-->
+        <div class="padding">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/photo-hands.jpg" class="img-rounded" height=300px;>
+                    </div>
+                    <div class="col-md-6 text-center">
                         <h1>UI/UX DESIGN</h1>
                         <h2>Simple-to-use and user-friendly design is the key to having a succesful website. </h2>
                         <p class="lead">Industries are changing and the way we market ourselves to clients must keep up with current tech trends.
@@ -104,7 +153,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <h4>Simple & Clean</h4>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia amet voluptatum doloribus quo dignissimos magnam, asperiores autem itaque perferendis.</P>
+                        <P>Simply put, UX Today is a design company that is client focused. We specialize in helping law firms build succesful websites that will stand out from the rest. User research based designs are carefully crafted by our front-end developers. We guarantee our websites with specialized usability testing catered to your law firms needs. We look forward to joining your team. </P>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <img src="images/Clean-laptop.jpg" class="img-responsive">
@@ -122,12 +171,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h4>Here's some cool reasons why to switch today...</h4>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia tempora voluptatem modi repudiandae. Aperiam animi officia laudantium obcaecati, nihil, fugiat sit deserunt labore error provident facere repudiandae nisi! Quas tempora iste repellendus nam quo in aliquid natus fugiat quisquam, nobis amet voluptate architecto quidem ducimus? Labore, commodi quis. Repellendus.</p>
+                        <h2>So What Is UX Design?</h2>
+                        <p class="lead">UXPA define UX design as:
+
+                                “Every aspect of the user’s interaction with a product, service or company that make up the user’s perceptions of the whole. User experience design as a discipline is concerned with all the elements that together make up that interface, including layout, visual design, text, brand, sound, and interaction. UX works to coordinate these elements to allow for the best possible interaction by users.”.</p>
                         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis, id, ut corporis beatae laudantium impedit consequuntur non inventore, temporibus asperiores officiis numquam? Provident, qui quo beatae eveniet iusto, dolores esse fugit blanditiis magnam perferendis atque, soluta neque? Laboriosam nam, minima optio perferendis repudiandae ab itaque fugit. Recusandae, facilis suscipit!</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="images/worklaptop.jpg" height=400;>
+                        <img src="images/attorney.jpg" class="img-circle" height=200;>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestias, aliquam praesentium porro sed beatae deleniti accusantium odit, voluptate voluptates necessitatibus alias iusto? Distinctio possimus illum, architecto eos atque similique repellat, non obcaecati temporibus nam beatae aut doloremque, nihil dignissimos soluta expedita modi ipsum quis mollitia nemo quisquam. Porro, nihil.</p>
                     </div>
                 </div>
             </div>
@@ -139,14 +191,19 @@
                 <h3>Connect with us today.</h3>
                 <a href="#" class="fa fa"></a>
                 <br>
-                <h4>address here</h4>
+                <h1>
+                        UX Today
+                    </h1>
+                    <h5>(559)123-4567</h5>
+                    <h5>www.UXToday.com</h5>
+                    <h5>UX_Today@yeebuddy.com</h5>
             </div>
             <div class="col-sm-4">
                 <h3> Social Media</h3>
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-facebook fa-3x"></a>
+                <a href="#" class="fab fa-twitter fa-3x"></a>
+                <a href="#" class="fab fa-linkedin fa-3x"></a>
+                <a href="#" class="fab fa-github fa-3x"></a>
             </div>
             <div class="col-sm-4">
                 <img src="images/logo.png" class="icon">
@@ -158,7 +215,7 @@
     <!--JAVASCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js/"></script>
+    <script src="js/main.js"></script> 
     <!--END JAVASCRIPT-->
 
 

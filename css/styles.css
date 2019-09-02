@@ -1,36 +1,48 @@
+ @import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap'); 
 
 
-@import url(
-    'https://fonts.googleapis.com/css?family=Patua+One');
+    
+
+    body {
+        font-family: 'Patua One', cursive;
+        color:black;
+    }
+
+    .container-fluid{
+        background-color: grey;
+    }
 
 
    html, body{
         font-family: 'Patua One', cursive;
-        color:white;
+        color:#23303c;
         height: 100%;
         width: 100%;
     }
 
+    h1 {
+        color:black;
+    }
     .navbar {
-        background-color: #23415C;
+        background-color: #23303c;
         padding: 1% 0;
         font-size: 1.2em;
     }
     
-    /* .navbar-brand>img {
+     .navbar-brand>img {
         height: 100%;
         padding: 15px;
         width: auto;
       } */
 
 
-    /* .logo-image{
+     .logo-image{
         width: 46px;
         height: 46px;
         border-radius: 50%;
         overflow: hidden;
         margin-top: -6px;
-    } */
+     } 
 
     .navbar-default .navbar-nav li a {
         color:#d5d5d5;
@@ -41,25 +53,35 @@
     }
 
     .jumbotron {
-        background-image: url('images\attorney.jpg') no-repeat center center fixed;
-        display: table;
+        background-image: url('https://unsplash.com/photos/xcVW_sFp4jQ');
         position: relative;
         align-items: center;
-        height:500px;
         background-size: cover;
     } 
-    
-/* .jumbotron, h1 {
-background-image: url('../images/attorney.jpg') no-repeat center center fixed;
-display: table;
-height: 100%;
-position: relative;
-width: 100%;
-background-size: cover;
-} */
+     
+     .modal-header {
+        color:pink;
+    }
+     *
 
+    /* #fixed {
+        background-image: url('images/attorney.jpg'); */
+    }
 
+    /* .fa {
+        padding: 20px;
+        font-size: 80px;
+        /* width: 30px; */
+        /* text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      }
 
-.text-center {
+      .fa-facebook {
+          color:pink;
+      }
+
+      .fa-instagram { color: #3f729b } */
+/* .text-center {
     background-color: blue;
-}
+/* } */  */
